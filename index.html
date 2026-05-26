@@ -339,12 +339,81 @@
 
         footer a { color: var(--primary); text-decoration: none; }
 
+        /* Guide Listing */
+        .guides-listing {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+        .guide-group {
+            background: rgba(26, 26, 46, 0.6);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+        .guide-group h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .guide-count-badge {
+            display: inline-block;
+            background: rgba(245, 200, 66, 0.15);
+            color: var(--primary);
+            font-size: 0.75rem;
+            padding: 0.15rem 0.6rem;
+            border-radius: 50px;
+            vertical-align: middle;
+            margin-left: 0.5rem;
+            font-weight: 700;
+        }
+        .guide-links {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 0.4rem;
+            margin-bottom: 1rem;
+        }
+        .guide-links li { margin: 0; }
+        .guide-links a {
+            display: block;
+            color: #c9d1d9;
+            font-size: 0.92rem;
+            padding: 0.35rem 0.5rem;
+            border-radius: 6px;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+        .guide-links a:hover {
+            background: rgba(245, 200, 66, 0.08);
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .view-all-link {
+            display: inline-block;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .view-all-link:hover {
+            color: #fff;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links { display: none; }
             h1 { font-size: 2.2rem; }
             .stats-bar { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
             section { padding: 4rem 1.5rem; }
+            .guide-links { grid-template-columns: 1fr; }
+            .guide-group { padding: 1.5rem; }
         }
     </style>
 </head>
@@ -423,36 +492,123 @@
         <h2 class="section-title">Browse Guides</h2>
         <p class="section-subtitle">Everything you need to dominate in OSRS</p>
         <div class="categories-grid">
-            <a href="#" class="category-card">
-                <div class="cat-icon">📜</div>
-                <h3>Quest Guides</h3>
-                <p>200+ complete walkthroughs</p>
-            </a>
-            <a href="#" class="category-card">
-                <div class="cat-icon">⚡</div>
-                <h3>Skill Training</h3>
-                <p>All 23 skills optimized</p>
-            </a>
-            <a href="#" class="category-card">
+            <a href="guides/money-making/" class="category-card">
                 <div class="cat-icon">💵</div>
                 <h3>Money Making</h3>
-                <p>F2P & P2P methods</p>
+                <p>15 guides – F2P &amp; P2P methods</p>
             </a>
-            <a href="#" class="category-card">
+            <a href="guides/skill-training/" class="category-card">
+                <div class="cat-icon">⚡</div>
+                <h3>Skill Training</h3>
+                <p>12 guides – 1-99 optimized paths</p>
+            </a>
+            <a href="guides/quest-guides/" class="category-card">
+                <div class="cat-icon">📜</div>
+                <h3>Quest Guides</h3>
+                <p>10 guides – Complete walkthroughs</p>
+            </a>
+            <a href="guides/boss-guides/" class="category-card">
                 <div class="cat-icon">🐉</div>
-                <h3>PV M Guides</h3>
-                <p>Boss strategies & drops</p>
+                <h3>Boss Guides</h3>
+                <p>8 guides – Strategies &amp; setups</p>
             </a>
-            <a href="#" class="category-card">
-                <div class="cat-icon">🏠</div>
-                <h3>Account Building</h3>
-                <p>Ironman to main builds</p>
-            </a>
-            <a href="#" class="category-card">
+            <a href="guides/misc-guides/" class="category-card">
                 <div class="cat-icon">⚙️</div>
-                <h3>Calculators</h3>
-                <p>XP, combat, profit tools</p>
+                <h3>Misc Guides</h3>
+                <p>5 guides – Tips &amp; unlocks</p>
             </a>
+        </div>
+    </section>
+
+    <!-- All Guides Listing -->
+    <section id="all-guides">
+        <h2 class="section-title">All 50 Guides</h2>
+        <p class="section-subtitle">Complete list of every guide on OSRS Guru</p>
+        <div class="guides-listing">
+            <div class="guide-group">
+                <h3>💰 Money Making Guides <span class="guide-count-badge">15</span></h3>
+                <ul class="guide-links">
+                    <li><a href="guides/money-making/osrs-chambers-xeric-loot-profit.html">Chambers of Xeric Loot &amp; Profit Guide</a></li>
+                    <li><a href="guides/money-making/osrs-cheap-flipping-new-players.html">Cheap Flipping Methods for New Players</a></li>
+                    <li><a href="guides/money-making/osrs-f2p-ironman-early-game.html">F2P Ironman Money Making Early Game</a></li>
+                    <li><a href="guides/money-making/osrs-f2p-money-making-no-stats.html">F2P Money Making – No Stats Required</a></li>
+                    <li><a href="guides/money-making/osrs-flip-items-profit-mid-game.html">Flip Items for Profit – Mid Game</a></li>
+                    <li><a href="guides/money-making/osrs-hunter-money-making-2026.html">Hunter Money Making Guide 2026</a></li>
+                    <li><a href="guides/money-making/osrs-ironman-money-making-f2p-2026.html">Ironman Money Making F2P 2026</a></li>
+                    <li><a href="guides/money-making/osrs-killing-green-dragons-profit.html">Killing Green Dragons for Profit</a></li>
+                    <li><a href="guides/money-making/osrs-low-effort-money-making-beginners.html">Low Effort Money Making for Beginners</a></li>
+                    <li><a href="guides/money-making/osrs-make-gold-fishing-2026.html">Make Gold with Fishing 2026</a></li>
+                    <li><a href="guides/money-making/osrs-make-money-zulrah.html">Make Money with Zulrah – Profit Guide</a></li>
+                    <li><a href="guides/money-making/osrs-money-crafting-low-level.html">Money Making with Crafting – Low Level</a></li>
+                    <li><a href="guides/money-making/osrs-passive-money-making-offline.html">Passive Money Making While Offline</a></li>
+                    <li><a href="guides/money-making/osrs-rune-spinning-profit-2026.html">Rune Spinning Profit Guide 2026</a></li>
+                    <li><a href="guides/money-making/osrs-wintertodt-money-per-hour.html">Wintertodt Money Per Hour Guide</a></li>
+                </ul>
+                <a href="guides/money-making/" class="view-all-link">View all Money Making guides &rarr;</a>
+            </div>
+
+            <div class="guide-group">
+                <h3>⚡ Skill Training Guides <span class="guide-count-badge">12</span></h3>
+                <ul class="guide-links">
+                    <li><a href="guides/skill-training/osrs-99-agility-fast-2026.html">99 Agility Fast Guide 2026</a></li>
+                    <li><a href="guides/skill-training/osrs-99-fishing-afk-method.html">99 Fishing – AFK Method 2026</a></li>
+                    <li><a href="guides/skill-training/osrs-99-hunter-afk-guide.html">1-99 Hunter Guide – AFK Method 2026</a></li>
+                    <li><a href="guides/skill-training/osrs-99-thieving-ironman.html">1-99 Thieving Guide for Ironman 2026</a></li>
+                    <li><a href="guides/skill-training/osrs-99-woodcutting-early-game.html">1-99 Woodcutting – Early Game 2026</a></li>
+                    <li><a href="guides/skill-training/osrs-cheapest-99-runecrafting-2026.html">Cheapest 99 Runecrafting 2026</a></li>
+                    <li><a href="guides/skill-training/osrs-fastest-99-combat-stats.html">Fastest 99 Attack, Strength &amp; Defence</a></li>
+                    <li><a href="guides/skill-training/osrs-fastest-99-cooking-f2p.html">Fastest 99 Cooking – F2P 2026</a></li>
+                    <li><a href="guides/skill-training/osrs-ironman-99-smithing.html">Ironman 1-99 Smithing Guide 2026</a></li>
+                    <li><a href="guides/skill-training/osrs-low-cost-99-herblore.html">Low Cost 1-99 Herblore Guide 2026</a></li>
+                    <li><a href="guides/skill-training/osrs-train-prayer-cheap-f2p.html">Cheap F2P Prayer Training 2026</a></li>
+                    <li><a href="guides/skill-training/osrs-unlock-dinosaur-hunting.html">Unlock Dinosaur Hunting Guide 2026</a></li>
+                </ul>
+                <a href="guides/skill-training/" class="view-all-link">View all Skill Training guides &rarr;</a>
+            </div>
+
+            <div class="guide-group">
+                <h3>📜 Quest &amp; Mission Guides <span class="guide-count-badge">10</span></h3>
+                <ul class="guide-links">
+                    <li><a href="guides/quest-guides/osrs-complete-fremennik-trials.html">Complete Fremennik Trials Quest</a></li>
+                    <li><a href="guides/quest-guides/osrs-complete-lost-city-guide.html">Complete Lost City Quest</a></li>
+                    <li><a href="guides/quest-guides/osrs-complete-monkey-madness.html">Complete Monkey Madness Quest</a></li>
+                    <li><a href="guides/quest-guides/osrs-desert-treasure-low-level.html">Desert Treasure – Low Level Guide</a></li>
+                    <li><a href="guides/quest-guides/osrs-dragon-slayer-2-guide.html">Dragon Slayer 2 – Complete Walkthrough</a></li>
+                    <li><a href="guides/quest-guides/osrs-get-dragon-defender-2026.html">Get Dragon Defender Guide 2026</a></li>
+                    <li><a href="guides/quest-guides/osrs-get-rune-pouch-guide.html">Get Rune Pouch – Complete Guide</a></li>
+                    <li><a href="guides/quest-guides/osrs-graceful-outfit-full-guide.html">Graceful Outfit – Full Guide</a></li>
+                    <li><a href="guides/quest-guides/osrs-unlock-abyss-guide.html">Unlock the Abyss – Complete Guide</a></li>
+                    <li><a href="guides/quest-guides/osrs-unlock-fairy-rings-quick.html">Unlock Fairy Rings – Quick Guide</a></li>
+                </ul>
+                <a href="guides/quest-guides/" class="view-all-link">View all Quest &amp; Mission guides &rarr;</a>
+            </div>
+
+            <div class="guide-group">
+                <h3>🐉 Boss Fight Guides <span class="guide-count-badge">8</span></h3>
+                <ul class="guide-links">
+                    <li><a href="guides/boss-guides/osrs-alchemical-hydra-guide.html">Alchemical Hydra – Full Boss Guide</a></li>
+                    <li><a href="guides/boss-guides/osrs-beat-zulrah-beginners.html">Beat Zulrah – Beginner's Guide</a></li>
+                    <li><a href="guides/boss-guides/osrs-corporal-beast-loot.html">Corporeal Beast – Loot &amp; Strategy</a></li>
+                    <li><a href="guides/boss-guides/osrs-grotesque-guardians-low-stats.html">Grotesque Guardians – Low Stats Guide</a></li>
+                    <li><a href="guides/boss-guides/osrs-sarachnis-loot-ironman.html">Sarachnis Loot Guide for Ironman</a></li>
+                    <li><a href="guides/boss-guides/osrs-solo-god-wars-boss.html">Solo God Wars Boss – Beginner Guide</a></li>
+                    <li><a href="guides/boss-guides/osrs-thermonuclear-smoke-devil.html">Thermonuclear Smoke Devil Guide</a></li>
+                    <li><a href="guides/boss-guides/osrs-vorkath-low-gear-setup.html">Vorkath – Low Gear Setup Guide</a></li>
+                </ul>
+                <a href="guides/boss-guides/" class="view-all-link">View all Boss Fight guides &rarr;</a>
+            </div>
+
+            <div class="guide-group">
+                <h3>⚙️ Miscellaneous Guides <span class="guide-count-badge">5</span></h3>
+                <ul class="guide-links">
+                    <li><a href="guides/misc-guides/osrs-fossil-island-quick-guide.html">Fossil Island – Quick Guide</a></li>
+                    <li><a href="guides/misc-guides/osrs-house-teleport-tablet.html">House Teleport Tablet – All Methods</a></li>
+                    <li><a href="guides/misc-guides/osrs-increase-slayer-points-fast.html">Increase Slayer Points Fast</a></li>
+                    <li><a href="guides/misc-guides/osrs-kourend-castle-quick.html">Kourend Castle – Quick Travel Guide</a></li>
+                    <li><a href="guides/misc-guides/osrs-reclaim-twisted-bow.html">Reclaim Twisted Bow – Recovery Guide</a></li>
+                </ul>
+                <a href="guides/misc-guides/" class="view-all-link">View all Miscellaneous guides &rarr;</a>
+            </div>
         </div>
     </section>
 
