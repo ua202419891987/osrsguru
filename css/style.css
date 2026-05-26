@@ -1,0 +1,251 @@
+/* OSRS Guru - Dark Theme Stylesheet */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.7;
+}
+
+a {
+  color: #f0a500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  color: #f0a500;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav .nav-links a {
+  color: #c9d1d9;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav .nav-links a:hover {
+  color: #f0a500;
+  text-decoration: none;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: 0.5rem 2rem;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+.breadcrumb a {
+  color: #8b949e;
+}
+
+.breadcrumb span {
+  color: #f0a500;
+}
+
+/* Article */
+article {
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 0 1.5rem 4rem;
+}
+
+article h1 {
+  font-size: 2.2rem;
+  color: #f0a500;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #f0a500;
+  padding-bottom: 0.5rem;
+}
+
+article h2 {
+  font-size: 1.6rem;
+  color: #f0a500;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #f0a500;
+  padding-left: 0.75rem;
+}
+
+article h3 {
+  font-size: 1.25rem;
+  color: #e6b84c;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+article p {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+article ul, article ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+article li {
+  margin-bottom: 0.5rem;
+}
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+article th {
+  background: #21262d;
+  color: #f0a500;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border: 1px solid #30363d;
+}
+
+article td {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #30363d;
+}
+
+/* Tip Boxes */
+.tip-box {
+  background: #1a2332;
+  border: 1px solid #f0a500;
+  border-left: 4px solid #f0a500;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.tip-box strong {
+  color: #f0a500;
+}
+
+.warning-box {
+  background: #2d1a1a;
+  border: 1px solid #f85149;
+  border-left: 4px solid #f85149;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+}
+
+.warning-box strong {
+  color: #f85149;
+}
+
+/* Gear Grid */
+.gear-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin: 1.2rem 0;
+}
+
+.gear-slot {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+}
+
+.gear-slot .slot-name {
+  color: #8b949e;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.gear-slot .item-name {
+  color: #f0a500;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  background: #161b22;
+  border-top: 1px solid #30363d;
+  padding: 2rem;
+  text-align: center;
+  color: #8b949e;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: #f0a500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    padding: 0.75rem 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav .nav-links {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  article {
+    padding: 0 1rem 3rem;
+  }
+
+  article h1 {
+    font-size: 1.7rem;
+  }
+
+  article h2 {
+    font-size: 1.3rem;
+  }
+
+  .gear-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Back to Top */
+.back-to-top {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  color: #c9d1d9;
+  font-size: 0.9rem;
+}
+
+.back-to-top:hover {
+  background: #30363d;
+  text-decoration: none;
+}
