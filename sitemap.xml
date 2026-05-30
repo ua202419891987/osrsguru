@@ -22,7 +22,7 @@
   <url><loc>https://osrsguru.com/guides/money-making/osrs-passive-money-making-offline.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/money-making/osrs-rune-spinning-profit-2026.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/money-making/osrs-wintertodt-money-per-hour.html</loc><priority>0.8</priority></url>
-  <!-- Skill Training Guides (12) -->
+  <!-- Skill Training Guides (22) -->
   <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-agility-fast-2026.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-fishing-afk-method.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-hunter-afk-guide.html</loc><priority>0.8</priority></url>
@@ -35,7 +35,16 @@
   <url><loc>https://osrsguru.com/guides/skill-training/osrs-low-cost-99-herblore.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/skill-training/osrs-train-prayer-cheap-f2p.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/skill-training/osrs-unlock-dinosaur-hunting.html</loc><priority>0.8</priority></url>
-  <!-- Quest & Mission Guides (10) -->
+  <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-mining-guide-2026.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-crafting-guide-2026.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-fletching-guide-2026.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-firemaking-guide-2026.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-farming-guide-2026.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-construction-guide-2026.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-magic-guide-2026.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/skill-training/osrs-99-slayer-guide-2026.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/skill-training/osrs-ironman-crafting-guide-2026.html</loc><priority>0.8</priority></url>
+  <!-- Quest & Mission Guides (11) -->
   <url><loc>https://osrsguru.com/guides/quest-guides/osrs-complete-fremennik-trials.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/quest-guides/osrs-complete-lost-city-guide.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/quest-guides/osrs-complete-monkey-madness.html</loc><priority>0.8</priority></url>
@@ -46,7 +55,8 @@
   <url><loc>https://osrsguru.com/guides/quest-guides/osrs-graceful-outfit-full-guide.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/quest-guides/osrs-unlock-abyss-guide.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/quest-guides/osrs-unlock-fairy-rings-quick.html</loc><priority>0.8</priority></url>
-  <!-- Boss Fight Guides (8) -->
+  <url><loc>https://osrsguru.com/guides/quest-guides/osrs-barrows-gloves-rfd-guide.html</loc><priority>0.8</priority></url>
+  <!-- Boss Fight Guides (13) -->
   <url><loc>https://osrsguru.com/guides/boss-guides/osrs-alchemical-hydra-guide.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/boss-guides/osrs-beat-zulrah-beginners.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/boss-guides/osrs-corporal-beast-loot.html</loc><priority>0.8</priority></url>
@@ -55,10 +65,18 @@
   <url><loc>https://osrsguru.com/guides/boss-guides/osrs-solo-god-wars-boss.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/boss-guides/osrs-thermonuclear-smoke-devil.html</loc><priority>0.8</priority></url>
   <url><loc>https://osrsguru.com/guides/boss-guides/osrs-vorkath-low-gear-setup.html</loc><priority>0.8</priority></url>
-  <!-- Miscellaneous Guides (5) -->
+  <url><loc>https://osrsguru.com/guides/boss-guides/osrs-fire-cape-jad-guide.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/boss-guides/osrs-corrupted-gauntlet-guide.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/boss-guides/osrs-tombs-of-amascut-guide.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/boss-guides/osrs-wilderness-boss-guide.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/boss-guides/osrs-theatre-of-blood-guide.html</loc><priority>0.8</priority></url>
+  <!-- Miscellaneous Guides (8) -->
   <url><loc>https://osrsguru.com/guides/misc-guides/osrs-fossil-island-quick-guide.html</loc><priority>0.7</priority></url>
   <url><loc>https://osrsguru.com/guides/misc-guides/osrs-house-teleport-tablet.html</loc><priority>0.7</priority></url>
   <url><loc>https://osrsguru.com/guides/misc-guides/osrs-increase-slayer-points-fast.html</loc><priority>0.7</priority></url>
   <url><loc>https://osrsguru.com/guides/misc-guides/osrs-kourend-castle-quick.html</loc><priority>0.7</priority></url>
   <url><loc>https://osrsguru.com/guides/misc-guides/osrs-reclaim-twisted-bow.html</loc><priority>0.7</priority></url>
+  <url><loc>https://osrsguru.com/guides/misc-guides/osrs-ironman-progression-guide-2026.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/misc-guides/osrs-herb-run-guide.html</loc><priority>0.8</priority></url>
+  <url><loc>https://osrsguru.com/guides/misc-guides/osrs-best-in-slot-gear-progression.html</loc><priority>0.8</priority></url>
 </urlset>
